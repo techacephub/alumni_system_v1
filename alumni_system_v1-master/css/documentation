@@ -1,0 +1,12 @@
+#CAD3.0 Alumni System
+#Each User Interface Page must have only one stylesheet. For instance Homepage must have only one stylesheet "homepage.css"
+
+
+#All your CSS code for the homepage must remain on that file - no external file must be included apart from external library e.g Bootstrap
+
+
+#Group Leader and UI Developer (members) must ensure there SELECTOR name must not be the same with other selector written by another members and the name must describe what it is being use for
+
+
+#Members are allow to comment their name on any code written by them
+
