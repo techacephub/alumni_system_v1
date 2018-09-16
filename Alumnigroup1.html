@@ -1,0 +1,425 @@
+<!DOCTYPE html>
+<html>
+<head>
+	<title>alumni</title>
+	<link rel="stylesheet" type="text/css" href="css/font-awesome.css">
+	<link rel="stylesheet" type="text/css" href="css/progress-wizard.min.css">
+	<link rel="stylesheet" type="text/css" href="css/bootstrap.css">
+    <link rel="stylesheet" type="text/css" href="css/style.css">
+    <script type="text/javascript" src="js/jquery.min.js"></script>
+	<script type="text/javascript" src="js/bootstrap.js"></script>
+	<script type="text/javascript" src="js/bootstrap.min.js"></script>
+</head>
+<style type="text/css">
+	body{
+	background-image: url(img/2.jpg);
+	width: 100%;
+	height: 500px;
+	background-size: cover;
+	color: white;
+}
+.progress-indicator .bubble{
+	background-color: white;
+}
+@media screen and (max-width: 320px){
+.contine{
+	margin-left: -180px !important;
+	/*text-align: center;*/
+}
+}
+</style>
+<body class="body">
+
+	<div class="container-fluid backimg">
+			<div>
+				<img src="img/logo.png" width="200" height="110">
+			</div>
+		<div class="row">
+			<div class="col-sm-3 col-xs-1"></div>
+			<!-- section1 -->
+			<div class="col-sm-6 col-xs-10 section1"   id="section1" >
+				<div>
+                <ul class="progress-indicator"> 
+                  <li > <span class="bubble"></span><br>Basic Information </li> 
+                  <li> <span class="bubble"></span><br> Personal Data </li> 
+                  <li> <span class="bubble"></span><br> Completion</li>
+                 </ul> 
+            </div>
+			<form class="put"   method="post">
+				<h4 class="class">BASIC INFORMATION</h4>
+					
+				  <div class="form-group">
+				    <label for="exampleInputEmail1">Username</label>
+				    <input type="text" class="form-control" id="username" name="username" placeholder="Username" required>
+
+				  </div>
+				  <span id="erroruser"></span>
+				  <div class="form-group">
+				    <label for="exampleInputPassword1">Password</label>
+				    <input type="password" class="form-control" id="password" name="password" placeholder="Password">
+				  </div>
+				  <span id="errorpass"></span>
+				  <div class="form-group">
+				    <label for="exampleInputPassword1">Confirm Password</label>
+				    <input type="password" class="form-control" id="comfirm"  name="confirm" placeholder="Confirm Password">
+				  </div>
+				  <span id="errorconfirm"></span>
+				  <div class="form-group">
+				    <label for="exampleInputFile">File input</label>
+				    <input type="file" id="exampleInputFile" name="file" id="file" placeholder="Upload Picture" style="margin-right: 20px;" >
+				  </div>
+				  <span id="errorfile"></span>
+			</form>
+				<button type="submit" class="submit next nextbtn" firstparam="section1" secondparam="section2" id="btn3">NEXT</button>
+				
+				</div>
+			<div class="col-sm-3 col-xs-1"></div>
+		</div>
+			<!-- end of section 1 -->
+		
+
+		<!-- section2 -->
+		<div class="row">
+			<div class="col-sm-3 col-xs-1"></div>
+		<div class="col-sm-6 col-xs-10 section2" id="section2">
+				<div>
+                <ul class="progress-indicator"> 
+                  <li class="completed"> <span class="bubble"></span><br>Basic Information </li> 
+                  <li> <span class="bubble"></span><br> Personal Data </li> 
+                  <li> <span class="bubble"></span><br> Completion</li>
+                 </ul> 
+            </div>
+
+			<form class="put"   method="post">
+				<h4 class="class class">PERSONAL INFORMATION</h4>
+								
+				  <div class="form-group">
+				    <label for="exampleInputEmail1">Fullname</label>
+				    <input type="text" class="form-control"  name="username" placeholder="Enter your full name" id="fullname">
+				  </div>
+				  <span id="errorfullname"></span>
+				  <div class="form-group">
+				    <label for="exampleInputPassword1">Date of Birth</label>
+				    <input type="date" class="form-control" id="dob" name="date" placeholder="dd/mm/yyyy">
+				  </div>
+				  <span id="errordate"></span>
+				  <div class="form-group">
+				    <label for="exampleInputPassword1">Address</label>
+				    <input type="text" class="form-control" id="address"  name="Address" placeholder="Address">
+				  </div>
+				  <span id="erroraddress"></span>
+				  <div class="form-group">
+                      <label for="">Phone</label>
+                     <input type="text" class="control1" name="phone" placeholder="Phone" id="phone">
+                  </div>
+                  <span id="errorphone"></span>
+                  <div class="form-group">
+                   <label for="">occupation</label>
+                   <input type="text" class="control1" name="occupation" placeholder="occupation" id="occupation">
+               </div>
+               <span id="erroroccupationr"></span>
+				<div class="form-group">
+                   <label for="">Date of Year</label>
+                   <input type="date" class="form-control" id="exampleInputPassword1" name="date" placeholder="dd/mm/yyyy" id="Year">
+               </div>
+               <span id="erroryear"></span>
+				  </form>
+				  <div class="col-sm-9"></div>
+				<div class="col-sm-1">
+					<button  class="button next back" firstparam="section2" secondparam="section1" id="btn">PREV</button>
+				
+				</div>
+				<div class="col-sm-1"></div>
+				<div class="col-sm-1">
+					
+				<button  class="submit1 next nextbtn" firstparam="section2" secondparam="section3" id="btn" type="submit">SIGN UP</button>
+				</div>
+				</div>
+			<div class="col-sm-3 col-xs-1"></div>
+		
+		<!-- end of section 2 -->
+	</div>
+	<!-- section3 -->
+	<div class="row backimg1 ">
+			<div class="col-sm-4 col-xs-1"></div>
+			<!-- section1 -->
+			<div class="col-sm-4 col-xs-10" id="section3">
+			<div>
+                <ul class="progress-indicator"> 
+                  <li class="completed"> <span class="bubble"></span><br>Basic Information </li> 
+                  <li class="completed"> <span class="bubble"></span><br> Personal Data </li> 
+                  <li class="completed"> <span class="bubble"></span><br> Completion</li>
+                 </ul> 
+            </div>
+			<form class="suess"  id="form1" method="post">
+				<div class="Personal">Registration Successful!</div>
+					<div class="check">
+						<i class="glyphicon glyphicon-ok"></i>
+					</div>
+					<div class="col-sm-4"></div>
+					<div class="col-sm-4 col-xs-8">
+						<button  class="button contine">Continue</button>
+					</div>
+					<div class="col-sm-4"></div>
+						
+					
+			</form>
+				
+				
+			</div>
+			<div class="col-sm-4 col-xs-1"></div>
+		</div>
+	<!-- end of section 3 -->
+</div>
+
+ <script>
+    $(document).ready(function(){
+	 // firstparam = $(this).attr("firstparam");
+  //       secondparam = $(this).attr("secondparam");
+
+	 $('#username').on('keyup',function()
+	{
+		if ($('#username').val().length == "") {
+        	$('#erroruser').text("**Username is required!! ");
+			$('#erroruser').css('color', 'red');
+			$('#username').focus();
+        }
+        if ($('#username').val().length < 3) {
+        	$('#erroruser').text("**Username must be atleast 3 characters!! ");
+			$('#erroruser').css('color', 'red');
+			$('#username').focus();
+        }
+        else{
+        	$('#erroruser').text("");
+        }
+        
+	});
+	 $('#password').on('keyup',function()
+	{
+		if ($('#password').val().length == "") {
+        	$('#errorpass').text("**password is required!! ");
+			$('#errorpass').css('color', 'red');
+			$('#password').focus();
+        }
+        if ($('#password').val().length < 6) {
+        	$('#errorpass').text("**password must be atleast 6 characters ");
+			$('#errorpass').css('color', 'red');
+			$('#password').focus();
+        }
+        else{
+        	$('#errorpass').text("");
+        }
+        
+	});
+	  $('#comfirm').on('keyup',function()
+	{
+		if (($('#comfirm').val() != $('#password').val())) {
+        	$('#errorconfirm').text("**password entered does not match!! ");
+			$('#errorconfirm').css('color', 'red');
+			$('#comfirm').focus();
+        }
+        else{
+        	$('#errorconfirm').text("");
+        }
+        
+	});
+
+// end of Basic Information
+
+// Personal Information
+	   $('#fullname').on('keyup',function()
+	{
+		if ($('#fullname').val().length == "") {
+        	$('#errorfullname').text("**fullname is required!! ");
+			$('#errorfullname').css('color', 'red');
+			$('#fullname').focus();
+        }
+         else{
+        	$('#errorfullname').text("");
+        }
+        if ($('#fullname').val().length < 20) {
+        	$('#errorfullname').text("**fullname must be atleast 20 characters!! ");
+			$('#errorfullname').css('color', 'red');
+			$('#fullname').focus();
+        }
+        else{
+        	$('#errorfullname').text("");
+        }
+        
+	});
+	
+
+	  $('#phone').on('keyup',function()
+	{
+		if ($('#phone').val()=="") {
+        	$('#errorphone').text("**phone number is required!! ");
+			$('#errorphone').css('color', 'red');
+			$('#phone').focus();
+        }
+        else{
+        	$('#errorphone').text("");
+        }
+         if ($('#phone').val().length < 10) {
+        	$('#errorphone').text("incorrect telephone number ");
+			$('#errorphone').css('color', 'red');
+			$('#phone').focus();
+        }
+        else{
+        	$('#errorphone').text("");
+        }
+         if (isNaN($('#phone').val())) {
+        	$('#errorphone').text("Phone number must be a digit");
+			$('#errorphone').css('color', 'red');
+			$('#phone').focus();
+        }
+        else{
+        	$('#errorphone').text("");
+        }
+        
+	});
+// end of Personal Information
+
+
+// submit query
+$('.submit').click(function(){
+	firstparam = $(this).attr("firstparam");
+        secondparam = $(this).attr("secondparam");
+ 		if ($('#username').val().length == "") {
+        	$('#erroruser').text("**Username is required!! ");
+			$('#erroruser').css('color', 'red');
+			$('#username').focus();
+        }
+        if ($('#username').val().length < 3) {
+        	$('#erroruser').text("**Username must be atleast 3 characters!! ");
+			$('#erroruser').css('color', 'red');
+			$('#username').focus();
+        }
+        
+		if ($('#password').val().length == "") {
+        	$('#errorpass').text("**password is required!! ");
+			$('#errorpass').css('color', 'red');
+			$('#password').focus();
+
+        }
+        if ($('#password').val().length < 6) {
+        	$('#errorpass').text("**password must be atleast 6 characters ");
+			$('#errorpass').css('color', 'red');
+			$('#password').focus();
+        }
+        
+		if (($('#comfirm').val() != $('#password').val())) {
+        	$('#errorconfirm').text("**password entered does not match!! ");
+			$('#errorconfirm').css('color', 'red');
+			$('#comfirm').focus();
+        }
+  		if($('#comfirm').val()==""){
+  		$('#errorconfirm').text("**Ensure you enter the confirm password ");
+			$('#errorconfirm').css('color', 'red');
+			$('#comfirm').focus();
+        }
+         else{
+
+        $('#'+firstparam).css('display','none');
+        $('#'+secondparam).css('display','block');
+   		}
+     
+ });
+
+// signup query
+$('.submit1').click(function(){
+		// alert("hdsgsh");
+		firstparam = $(this).attr("firstparam");
+        secondparam = $(this).attr("secondparam");
+
+ 		if ($('#fullname').val().length == "") {
+        	$('#errorfullname').text("**fullname is required!! ");
+			$('#errorfullname').css('color', 'red');
+			$('#fullname').focus();
+        }
+        
+        if ($('#fullname').val().length < 20) {
+        	$('#errorfullname').text("**fullname must be atleast 20 characters!!");
+			$('#errorfullname').css('color', 'red');
+			$('#fullname').focus();
+        }
+       
+       
+		if ($('#phone').val()=="") {
+        	$('#errorphone').text("**phone number is required!! ");
+			$('#errorphone').css('color', 'red');
+			$('#phone').focus();
+        }
+        
+         if ($('#phone').val().length < 10) {
+        	$('#errorphone').text("incorrect telephone number ");
+			$('#errorphone').css('color', 'red');
+			$('#phone').focus();
+        }
+   		if (isNaN($('#phone').val())) {
+        	$('#errorphone').text("Phone number must be a digit");
+			$('#errorphone').css('color', 'red');
+			$('#phone').focus();
+        }
+        else {
+        $('#'+firstparam).css('display','none');
+        $('#'+secondparam).css('display','block');
+    }
+     
+ });
+
+// end of sign up query
+      $('.back').click(function(){
+
+        firstparam = $(this).attr("firstparam");
+        secondparam = $(this).attr("secondparam");
+
+        $('#'+firstparam).css('display','none');
+        $('#'+secondparam).css('display','block');
+      });
+
+
+	} );
+
+
+ //      $('.nextbtn').click(function(){
+
+ //        firstparam = $(this).attr("firstparam");
+ //        secondparam = $(this).attr("secondparam");
+ //        username = $('#username').val();
+ //        password = $('#password').val();
+ //        confirm = $('#comfirm').val();
+ //        if (username.length =="") {
+ //        	$('#erroruser').text("**Username is required!! ");
+	// 		$('#erroruser').css('color', 'red');
+ //        }
+ //        if ((password.length < 6) || (password.length =="")) {
+ //        	$('#errorpass').text("**password must be more than 6 characters!!! ");
+	// 		$('#errorpass').css('color', 'red');
+ //        }
+ //        	if(confirm != password){
+	// 	errorconfirm.innerHTML="**password entered does not match";
+	// 	errorconfirm.style.color="red";
+	// }
+	
+        
+ //        else{
+ //        $('#'+firstparam).css('display','none');
+ //        $('#'+secondparam).css('display','block');
+ //    }
+ //      });
+
+ //       $('.back').click(function(){
+
+ //        firstparam = $(this).attr("firstparam");
+ //        secondparam = $(this).attr("secondparam");
+
+ //        $('#'+firstparam).css('display','none');
+ //        $('#'+secondparam).css('display','block');
+ //      });
+		
+
+    
+
+  </script>
+</body>
+</html>
